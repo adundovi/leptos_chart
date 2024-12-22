@@ -1,4 +1,4 @@
-use leptos::*;
+use leptos::{children::Children, prelude::*};
 use theta_chart::coord::*;
 
 // Wrap chart in SVG

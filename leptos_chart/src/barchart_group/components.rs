@@ -2,7 +2,7 @@ use crate::{
     axes::{XAxis, YAxis},
     core::SvgChart,
 };
-use leptos::{component, view, IntoView};
+use leptos::{prelude::*, component, view, IntoView};
 use theta_chart::{color::Color, coord, series::Series};
 
 /// Component LineChart for leptos
@@ -192,7 +192,7 @@ pub fn BarChartGroup(
                                     // len as f64;
 
                                     <line x1=x y1="0" x2=x y2=y style=style.clone()></line>
-                                  }
+                                  }.into_any()
                               })
                               .collect::<Vec<_>>()
                       })
@@ -229,7 +229,7 @@ pub fn BarChartGroup(
                                     // len as f64;
 
                                     <line x1="0" y1=y x2=x y2=y style=style.clone()></line>
-                                  }
+                                  }.into_any()
                               })
                               .collect::<Vec<_>>()
                       })

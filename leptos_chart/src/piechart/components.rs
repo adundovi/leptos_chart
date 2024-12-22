@@ -1,5 +1,5 @@
 use crate::core::{SvgPolar, REM};
-use leptos::{component, view, IntoView};
+use leptos::{prelude::*, component, view, IntoView};
 use theta_chart::{chart::ScaleNumber, color::Color, coord};
 
 /// Component PieChart for leptos
